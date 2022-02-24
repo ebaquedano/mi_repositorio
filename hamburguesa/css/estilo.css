@@ -1,0 +1,224 @@
+body {
+  margin: 0px;
+  font-size: 20px;
+}
+
+/* ESTILOS HEADER */
+header ul {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+}
+header li {
+  color: white;
+  margin: 30px;
+  text-decoration: none;
+}
+
+ul a{
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  text-decoration: none;
+}
+
+
+header {
+  background-color: darkcyan;
+}
+
+/* ESTILOS FOOTER */
+footer {
+  background-color: darkcyan;
+  padding: 10px;
+}
+
+footer li {
+  color: white;
+  padding: 3px;
+}
+
+/* ESTILOS ADENTRO DEL MAIN */
+
+section {
+  text-align: center;
+}
+
+h1 {
+  color: red;
+}
+
+h3 {
+  color: blue;
+}
+
+h4 {
+  color: green;
+}
+
+.tablaPromociones {
+  display: flex;
+  justify-content: center;
+}
+
+.formularioContactos{
+  
+  justify-content: center;
+  background-color: rgb(41, 39, 39);
+}
+
+main h1{
+  text-align: center;
+}
+
+.padre{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.padre .hamburgesaUno{
+width: calc(33.3% - 20px);
+border: 2px solid black;
+margin: 7px;
+background-color: #ff9800;
+}
+.padre .hamburgesaDos{
+  width: calc(33.3% - 20px);
+  border: 2px solid black;
+  margin: 7px;
+  background-color: #ff9800;
+  }
+
+.padre .hamburgesaTres{
+    width: calc(33.3% - 20px);
+    border: 2px solid black;
+    margin: 7px;
+    background-color: #ff9800;
+    }
+
+.padre .papasUno{
+  width: calc(33.3% - 20px);
+  border: 2px solid black;
+    margin: 7px;
+    background-color: #ff9800;
+}
+
+.padre .papasDos{
+  width: calc(33.3% - 20px);
+  border: 2px solid black;
+    margin: 7px;
+    background-color: #ff9800;
+}
+
+.padre .papasTres{
+  width: calc(33.3% - 20px);
+  border: 2px solid #3c3c3c;
+    margin: 7px;
+    background-color: #ff9800;
+}
+
+.padre img{
+  width: 237.96px;
+  height: 237.96px;
+}
+
+.padre .hamburgesaDos img{
+  width: 237.96px;
+  height: 237.96px;
+}
+
+th{
+  border: 2px solid black;
+  padding: 8px;
+}
+
+body main{
+  width: 80%;
+  margin: auto;
+}
+
+#grilla{
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 400px 400px;
+  background-color: sandybrown;
+  grid-template-areas: "a1 a1 a1 a1"
+                        "a2 a2 a3 a3";
+
+  justify-items: center;
+  align-items: center;
+}
+
+#bannerUno{
+  height: 90%;
+  width: 80%;
+  background-color: sienna;
+  grid-area: a1;
+}
+
+#informacionUno{
+  grid-area: a2;
+}
+
+
+img{
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px){
+
+  header ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+  }
+  header li {
+    color: white;
+    margin: 30px;
+    text-decoration: none;
+  }
+  
+  ul a{
+    text-decoration: none;
+  }
+  
+  nav ul {
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  
+  header {
+    background-color: darkcyan;
+  }
+
+  #grilla{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 400px 400px;
+    background-color: sandybrown;
+    grid-template-areas: "a1 a1 a1 a1"
+                          "a2 a2 a3 a3";
+  
+    justify-items: center;
+    align-items: center;
+  }
+  
+  #bannerUno{
+    height: 90%;
+    width: 80%;
+    background-color: sienna;
+    grid-area: a1;
+  }
+  
+  #informacionUno{
+    grid-area: a2;
+  }
+  
+  
+  img{
+    width: 100%;
+  }
+}
