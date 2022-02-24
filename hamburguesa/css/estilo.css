@@ -8,6 +8,7 @@ header ul {
   display: flex;
   justify-content: center;
   margin-top: 0px;
+  margin-bottom: 0px;
 }
 header li {
   color: white;
@@ -15,7 +16,7 @@ header li {
   text-decoration: none;
 }
 
-ul a{
+ul a {
   text-decoration: none;
 }
 
@@ -23,7 +24,6 @@ nav ul {
   list-style: none;
   text-decoration: none;
 }
-
 
 header {
   background-color: darkcyan;
@@ -63,162 +63,194 @@ h4 {
   justify-content: center;
 }
 
-.formularioContactos{
-  
+.formularioContactos {
   justify-content: center;
-  background-color: rgb(41, 39, 39);
+  background-color: #85ffbd;
+  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+  margin: 30px;
 }
 
-main h1{
+main h1 {
   text-align: center;
 }
 
-.padre{
+.padre {
   display: flex;
   flex-wrap: wrap;
 }
 
-.padre .hamburgesaUno{
-width: calc(33.3% - 20px);
-border: 2px solid black;
-margin: 7px;
-background-color: #ff9800;
-}
-.padre .hamburgesaDos{
+.padre .hamburgesaUno {
   width: calc(33.3% - 20px);
   border: 2px solid black;
   margin: 7px;
-  background-color: #ff9800;
-  }
-
-.padre .hamburgesaTres{
-    width: calc(33.3% - 20px);
-    border: 2px solid black;
-    margin: 7px;
-    background-color: #ff9800;
-    }
-
-.padre .papasUno{
+  background-color: #ff9900a8;
+}
+.padre .hamburgesaDos {
   width: calc(33.3% - 20px);
   border: 2px solid black;
-    margin: 7px;
-    background-color: #ff9800;
+  margin: 7px;
+  background-color: #ff9900a8;
 }
 
-.padre .papasDos{
+.padre .hamburgesaTres {
   width: calc(33.3% - 20px);
   border: 2px solid black;
-    margin: 7px;
-    background-color: #ff9800;
+  margin: 7px;
+  background-color: #ff9900a8;
 }
 
-.padre .papasTres{
+.padre .papasUno {
+  width: calc(33.3% - 20px);
+  border: 2px solid black;
+  margin: 7px;
+  background-color: #ff9900a8;
+}
+
+.padre .papasDos {
+  width: calc(33.3% - 20px);
+  border: 2px solid black;
+  margin: 7px;
+  background-color: #ff9900a8;
+}
+
+.padre .papasTres {
   width: calc(33.3% - 20px);
   border: 2px solid #3c3c3c;
-    margin: 7px;
-    background-color: #ff9800;
+  margin: 7px;
+  background-color: #ff9900a8;
 }
 
-.padre img{
+.padre img {
   width: 237.96px;
   height: 237.96px;
 }
 
-.padre .hamburgesaDos img{
+.padre .hamburgesaDos img {
   width: 237.96px;
   height: 237.96px;
 }
 
-th{
+th {
   border: 2px solid black;
   padding: 8px;
 }
 
-body main{
+body main {
   width: 80%;
   margin: auto;
 }
 
-#grilla{
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 400px 400px;
-  background-color: sandybrown;
-  grid-template-areas: "a1 a1 a1 a1"
-                        "a2 a2 a3 a3";
+/* HOME */
 
-  justify-items: center;
-  align-items: center;
+#bannerUno {
+  text-align: center;
+  background-color: #f191009b;
+  padding: 10px;
+}
+.informacion {
+  background-color: #ff99004b;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.imagenBanner {
+  max-width: 100%;
+  margin: auto;
 }
 
-#bannerUno{
-  height: 90%;
-  width: 80%;
-  background-color: sienna;
-  grid-area: a1;
+/* Nosotros*/
+
+.cocina {
+  display: flex;
+  background-color: #85ffbd;
+  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+}
+.cocinaImg {
+  width: 50%;
 }
 
-#informacionUno{
-  grid-area: a2;
+.cocinaImg img {
+  width: 90%;
+  margin: auto;
 }
 
-
-img{
-  width: 100%;
+.cocinaText {
+  width: 50%;
+  margin-top: 140px;
 }
 
-@media only screen and (max-width: 600px){
+.cocinaText p {
+  width: 90%;
+  margin: auto;
+}
 
+@media only screen and (max-width: 930px) {
+  body {
+    font-size: 16px;
+  }
+
+  body main {
+    width: 96%;
+    margin: auto;
+  }
   header ul {
-    display: flex;
-    justify-content: center;
-    margin-top: 0px;
-  }
-  header li {
-    color: white;
-    margin: 30px;
-    text-decoration: none;
-  }
-  
-  ul a{
-    text-decoration: none;
-  }
-  
-  nav ul {
-    list-style: none;
-    text-decoration: none;
-  }
-  
-  
-  header {
-    background-color: darkcyan;
+    flex-direction: column;
   }
 
-  #grilla{
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 400px 400px;
-    background-color: sandybrown;
-    grid-template-areas: "a1 a1 a1 a1"
-                          "a2 a2 a3 a3";
-  
-    justify-items: center;
-    align-items: center;
+  header li {
+    margin: 6px;
   }
-  
-  #bannerUno{
-    height: 90%;
-    width: 80%;
-    background-color: sienna;
-    grid-area: a1;
+
+  .formularioContactos {
+    margin: 0px;
   }
-  
-  #informacionUno{
-    grid-area: a2;
+
+  .padre .hamburgesaUno {
+    width: calc(50% - 20px);
   }
-  
-  
-  img{
+  .padre .hamburgesaDos {
+    width: calc(50% - 20px);
+  }
+
+  .padre .hamburgesaTres {
+    width: calc(50% - 20px);
+  }
+
+  .padre .papasUno {
+    width: calc(50% - 20px);
+  }
+
+  .padre .papasDos {
+    width: calc(50% - 20px);
+  }
+
+  .padre .papasTres {
+    width: calc(50% - 20px);
+  }
+  .padre img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .padre .hamburgesaDos img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .cocina {
+    display: block;
+  }
+  .cocinaImg {
     width: 100%;
+  }
+
+  .cocinaImg img {
+    width: 40%;
+    margin: auto;
+  }
+
+  .cocinaText {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
   }
 }
