@@ -3,6 +3,44 @@ body {
   font-size: 20px;
 }
 
+
+.contenedor{
+  background-color: bisque;
+  display: grid;
+  grid-template:
+  'banner banner bannerInfo'
+  'informacion informacion informacionDos';
+    grid-gap: 10px;
+}
+
+.banner{
+  grid-area: banner;
+}
+.banerInfo{
+  grid-area: bannerInfo;
+}
+.informacion{
+  grid-area: informacion;
+}
+.informacionDos{
+  grid-area: informacionDos;
+  
+}
+
+.informacionDos p{
+  grid-area: informacionDos;
+  border: 2px solid black;
+  margin-right: 10px;
+  padding: 20px;
+}
+
+.bannerInfo p{
+  text-align: center;
+  border: 2px solid black;
+  margin-right: 10px;
+  padding: 20px;
+}
+
 /* ESTILOS HEADER */
 header ul {
   display: flex;
@@ -144,11 +182,9 @@ body main {
 
 #bannerUno {
   text-align: center;
-  background-color: #f191009b;
   padding: 10px;
 }
 .informacion {
-  background-color: #ff99004b;
   padding: 10px;
   margin-bottom: 20px;
 }
@@ -184,6 +220,29 @@ body main {
 }
 
 @media only screen and (max-width: 930px) {
+
+  
+.contenedor{
+  background-color: bisque;
+  display: grid;
+  grid-template:
+  'banner banner banner'
+
+  'informacion informacion informacion'
+  'informacionDos informacionDos informacionDos';
+    grid-gap: 10px;
+}
+
+.bannerInfo{
+  width: 90%;
+  margin: auto;
+}
+
+.informacion{
+  width: 90%;
+  margin: auto;
+}
+
   body {
     font-size: 16px;
   }
