@@ -1,75 +1,42 @@
 body {
   margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
   font-size: 20px;
 }
 
-
-.contenedor{
-  background-color: bisque;
-  display: grid;
-  grid-template:
-  'banner banner bannerInfo'
-  'informacion informacion informacionDos';
-    grid-gap: 10px;
-}
-
-.banner{
-  grid-area: banner;
-}
-.banerInfo{
-  grid-area: bannerInfo;
-}
-.informacion{
-  grid-area: informacion;
-}
-.informacionDos{
-  grid-area: informacionDos;
-  
-}
-
-.informacionDos p{
-  grid-area: informacionDos;
-  border: 2px solid black;
-  margin-right: 10px;
-  padding: 20px;
-}
-
-.bannerInfo p{
-  text-align: center;
-  border: 2px solid black;
-  margin-right: 10px;
-  padding: 20px;
+body main {
+  width: 80%;
+  margin: auto;
 }
 
 /* ESTILOS HEADER */
-header ul {
-  display: flex;
-  justify-content: center;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-header li {
+
+#contenedorNav a {
   color: white;
-  margin: 30px;
-  text-decoration: none;
+  margin-right: 40px;
+}
+#contenedorNav a:hover {
+ color: #f0941f;
 }
 
-ul a {
-  text-decoration: none;
+#contenedorNav {
+  background-color: #363432;
 }
 
-nav ul {
-  list-style: none;
-  text-decoration: none;
+.fondoNegro {
+  background-color: #363432 !important;
 }
-
-header {
-  background-color: darkcyan;
+#indexContenedor {
+  background-color: #90a19d;
+}
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 /* ESTILOS FOOTER */
 footer {
-  background-color: darkcyan;
+  background-color: #363432;
   padding: 10px;
 }
 
@@ -78,37 +45,52 @@ footer li {
   padding: 3px;
 }
 
+/* INICIO ESTILOS*/
+
+.fondoTexto {
+  background-color: #196774;
+}
+
+.informacionDos p {
+  border: 2px solid black;
+  padding: 20px;
+}
+
+.bannerInfo p {
+  color: #ffff;
+  text-align: center;
+  border: 2px solid black;
+  padding: 20px;
+  margin-bottom: 0px !important;
+}
+
 /* ESTILOS ADENTRO DEL MAIN */
 
 section {
   text-align: center;
 }
 
-h1 {
-  color: red;
+/* HOME */
+
+#bannerUno {
+  text-align: center;
+  padding: 10px;
+}
+.informacion {
+  color: #ffff;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.imagenBanner {
+  max-width: 100%;
+  margin: auto;
 }
 
-h3 {
-  color: blue;
-}
+/* ESTILOS MENU*/
 
-h4 {
-  color: green;
-}
-
-.tablaPromociones {
-  display: flex;
-  justify-content: center;
-}
-
-.formularioContactos {
-  justify-content: center;
-  background-color: #85ffbd;
-  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
-  margin: 30px;
-}
-
-main h1 {
+.tituloMenu {
+  color: #ef6024;
+  margin: 40px;
   text-align: center;
 }
 
@@ -118,44 +100,30 @@ main h1 {
 }
 
 .padre .hamburgesaUno {
+  color: #ffff;
   width: calc(33.3% - 20px);
   border: 2px solid black;
   margin: 7px;
-  background-color: #ff9900a8;
-}
-.padre .hamburgesaDos {
-  width: calc(33.3% - 20px);
-  border: 2px solid black;
-  margin: 7px;
-  background-color: #ff9900a8;
-}
-
-.padre .hamburgesaTres {
-  width: calc(33.3% - 20px);
-  border: 2px solid black;
-  margin: 7px;
-  background-color: #ff9900a8;
+  background-color: #90a19d;
 }
 
 .padre .papasUno {
+  color: #ffff;
   width: calc(33.3% - 20px);
   border: 2px solid black;
   margin: 7px;
-  background-color: #ff9900a8;
+  background-color: #90a19d;
 }
 
-.padre .papasDos {
-  width: calc(33.3% - 20px);
-  border: 2px solid black;
-  margin: 7px;
-  background-color: #ff9900a8;
+.padre .hamburgesaUno h4 {
+  background-color: #363432;
+  color: #f0941f;
+  padding: 10px;
 }
-
-.padre .papasTres {
-  width: calc(33.3% - 20px);
-  border: 2px solid #3c3c3c;
-  margin: 7px;
-  background-color: #ff9900a8;
+.padre .papasUno h4 {
+  background-color: #363432;
+  color: #f0941f;
+  padding: 10px;
 }
 
 .padre img {
@@ -168,80 +136,55 @@ main h1 {
   height: 237.96px;
 }
 
-th {
-  border: 2px solid black;
-  padding: 8px;
+/* ESTILOS PROMOCIONES */
+
+.tituloPromocion {
+  color: #ef6024;
+  margin: 30px;
 }
 
-body main {
-  width: 80%;
-  margin: auto;
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  color: #363432 !important;
+  background-color: #196774 !important;
 }
 
-/* HOME */
-
-#bannerUno {
-  text-align: center;
-  padding: 10px;
-}
-.informacion {
-  padding: 10px;
-  margin-bottom: 20px;
-}
-.imagenBanner {
-  max-width: 100%;
-  margin: auto;
+.sinPromocion a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
 }
 
-/* Nosotros*/
+/* NOSOTROS*/
 
-.cocina {
-  display: flex;
-  background-color: #85ffbd;
-  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
-}
-.cocinaImg {
-  width: 50%;
-}
-
-.cocinaImg img {
+.imgNosotros{
   width: 90%;
   margin: auto;
 }
 
-.cocinaText {
-  width: 50%;
-  margin-top: 140px;
-}
-
-.cocinaText p {
-  width: 90%;
-  margin: auto;
+/* ESTILOS CONTACTO  */
+.formularioContactos {
+  justify-content: center;
+  background-color: #196774;
+  color: #f0941f;
+  padding: 120px;
 }
 
 @media only screen and (max-width: 930px) {
 
-  
-.contenedor{
-  background-color: bisque;
-  display: grid;
-  grid-template:
-  'banner banner banner'
+  #contenedorNav a:hover {
+    background-color: #7ad4b657;
+  }
 
-  'informacion informacion informacion'
-  'informacionDos informacionDos informacionDos';
-    grid-gap: 10px;
-}
+  .bannerInfo {
+    width: 90%;
+    margin: auto;
+  }
 
-.bannerInfo{
-  width: 90%;
-  margin: auto;
-}
-
-.informacion{
-  width: 90%;
-  margin: auto;
-}
+  .informacion {
+    width: 90%;
+    margin: auto;
+  }
 
   body {
     font-size: 16px;
@@ -251,40 +194,15 @@ body main {
     width: 96%;
     margin: auto;
   }
-  header ul {
-    flex-direction: column;
-  }
-
-  header li {
-    margin: 6px;
-  }
-
-  .formularioContactos {
-    margin: 0px;
-  }
 
   .padre .hamburgesaUno {
-    width: calc(50% - 20px);
-  }
-  .padre .hamburgesaDos {
-    width: calc(50% - 20px);
-  }
-
-  .padre .hamburgesaTres {
-    width: calc(50% - 20px);
+    width: calc(100% - 20px);
   }
 
   .padre .papasUno {
-    width: calc(50% - 20px);
+    width: calc(100% - 20px);
   }
 
-  .padre .papasDos {
-    width: calc(50% - 20px);
-  }
-
-  .padre .papasTres {
-    width: calc(50% - 20px);
-  }
   .padre img {
     width: 100px;
     height: 100px;
@@ -293,13 +211,6 @@ body main {
   .padre .hamburgesaDos img {
     width: 100px;
     height: 100px;
-  }
-
-  .cocina {
-    display: block;
-  }
-  .cocinaImg {
-    width: 100%;
   }
 
   .cocinaImg img {
@@ -311,5 +222,9 @@ body main {
     width: 100%;
     margin-top: 10px;
     margin-bottom: 20px;
+  }
+
+  .formularioContactos {
+    padding: 40px;
   }
 }
