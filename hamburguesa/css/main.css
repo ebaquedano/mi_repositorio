@@ -1,0 +1,242 @@
+/* ESTILOS HEADER */
+#contenedorNav {
+  background-color: #323634;
+}
+#contenedorNav a {
+  color: #ffff;
+  margin-right: 40px;
+}
+#contenedorNav a:hover {
+  color: #f0941f;
+}
+
+.fondoNegro {
+  background-color: #323634 !important;
+}
+
+#indexContenedor {
+  background-color: #90a19d;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* ESTILOS FOOTER */
+footer {
+  background-color: #323634;
+  padding: 10px;
+}
+footer li {
+  color: #ffff;
+  padding: 3px;
+}
+footer li:hover {
+  color: #f0941f;
+}
+footer i {
+  color: #2ffdf3;
+}
+
+/* TEXTOS RESPONSIVE */
+p {
+  font-size: 20px;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+body main {
+  width: 80%;
+  margin: auto;
+}
+
+/* INICIO ESTILOS*/
+.fondoTexto {
+  background-color: #196774;
+}
+
+.informacionDos p {
+  border: 2px solid black;
+  padding: 20px;
+}
+
+.bannerInfo p {
+  color: #ffff;
+  text-align: center;
+  border: 2px solid black;
+  padding: 20px;
+  margin-bottom: 0px !important;
+}
+
+/* ESTILOS ADENTRO DEL MAIN */
+section {
+  text-align: center;
+}
+
+/* HOME */
+#bannerUno {
+  text-align: center;
+  padding: 10px;
+}
+
+.informacion {
+  color: #ffff;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.imagenBanner {
+  max-width: 100%;
+  margin: auto;
+}
+
+/* ESTILOS MENU*/
+.tituloMenu {
+  color: #ef6024;
+  margin: 40px;
+  text-align: center;
+}
+
+.padre {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contenedorMenu .hamburgesaUno {
+  color: #ffff;
+  width: calc(33.3% - 20px);
+  border: 2px solid black;
+  margin: 7px;
+  background-color: #90a19d;
+}
+
+.contenedorMenu .papasUno {
+  color: #ffff;
+  width: calc(33.3% - 20px);
+  border: 2px solid black;
+  margin: 7px;
+  background-color: #90a19d;
+}
+
+.contenedorMenu .hamburgesaUno h4 {
+  background-color: #363432;
+  color: #f0941f;
+  padding: 10px;
+}
+
+.contenedorMenu .papasUno h4 {
+  background-color: #363432;
+  color: #f0941f;
+  padding: 10px;
+}
+
+.contenedorMenu img {
+  width: 237.96px;
+  height: 237.96px;
+}
+
+.contenedorMenu .hamburgesaDos img {
+  width: 237.96px;
+  height: 237.96px;
+}
+
+/* ESTILOS PROMOCIONES */
+.tituloPromocion {
+  color: #ef6024;
+  margin: 30px;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  color: #363432 !important;
+  background-color: #196774 !important;
+}
+
+.sinPromocion a {
+  text-decoration: none;
+  color: #ffff;
+  font-weight: bold;
+}
+
+/* NOSOTROS*/
+.imgNosotros {
+  width: 90%;
+  margin: auto;
+}
+
+/* ESTILOS CONTACTO  */
+.formularioContactos {
+  justify-content: center;
+  background-color: #196774;
+  color: #f0941f;
+  padding: 120px;
+}
+
+@media only screen and (max-width: 930px) {
+  p {
+    font-size: 16px;
+  }
+
+  #contenedorNav a:hover {
+    background-color: #7ad4b657;
+  }
+
+  .bannerInfo {
+    width: 90%;
+    margin: auto;
+  }
+
+  .informacion {
+    width: 90%;
+    margin: auto;
+  }
+
+  body {
+    font-size: 16px;
+  }
+
+  body main {
+    width: 96%;
+    margin: auto;
+  }
+
+  .contenedorMenu .hamburgesaUno {
+    width: calc(100% - 20px);
+  }
+
+  .contenedorMenu .papasUno {
+    width: calc(100% - 20px);
+  }
+
+  .contenedorMenu img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .contenedorMenu .hamburgesaDos img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .cocinaImg img {
+    width: 40%;
+    margin: auto;
+  }
+
+  .cocinaText {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .formularioContactos {
+    padding: 40px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

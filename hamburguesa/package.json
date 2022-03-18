@@ -1,0 +1,31 @@
+{
+  "name": "Burgers Chips",
+  "version": "1.0.0",
+  "description": "Esta ecommerce es un portal de pedidos de las mejores hamburguesas de Buenos Aires",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ebaquedano/mi_repositorio.git"
+  },
+  "keywords": ["COMIDA, PAPASFRITAS, HAMBURGUESA, BEBIDAS"],
+  "author": "Jose Torres Baquedano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ebaquedano/mi_repositorio/issues"
+  },
+  "homepage": "https://github.com/ebaquedano/mi_repositorio#readme",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "bootstrap-icons": "^1.8.1",
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15",
+    "bootstrap": "^5.0.0",
+    "animate.css": "^4.1.1"
+  }
+}

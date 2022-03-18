@@ -1,3 +1,65 @@
+$colorVerdeOscuro: #196774;
+$colorGris: #90a19d;
+$bgMenu: #363432;
+
+$mapHeaderFooter:(
+colorNegro: #323634,
+colorNaranja: #f0941f,
+colorTextoBlanco: #ffff,
+colorIconos: #2ffdf3
+);
+
+$mapTextResponsive:(
+textoMovil: 16px,
+textoWeb: 20px,
+);
+
+
+/* ESTILOS HEADER */
+
+#contenedorNav {
+  background-color: map-get($mapHeaderFooter, colorNegro);
+  a {
+    color: map-get($mapHeaderFooter, colorTextoBlanco);
+    margin-right: 40px;
+    &:hover {
+        color: map-get($mapHeaderFooter, colorNaranja);
+    }
+  }
+}
+
+.fondoNegro {
+  background-color:  map-get($mapHeaderFooter, colorNegro)!important;
+}
+#indexContenedor {
+  background-color: $colorGris;
+}
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* ESTILOS FOOTER */
+
+footer {
+  background-color: map-get($mapHeaderFooter, colorNegro);
+  padding: 10px;
+
+  li {
+    color: map-get($mapHeaderFooter, colorTextoBlanco);
+    padding: 3px;
+  &:hover{
+    color: map-get($mapHeaderFooter, colorNaranja);
+  }} i{
+    color: map-get($mapHeaderFooter, colorIconos);
+  }
+}
+
+/* TEXTOS RESPONSIVE */
+
+p{
+  font-size:map-get($mapTextResponsive, textoWeb);
+}
+
 body {
   margin: 0px;
   padding: 0px;
@@ -10,45 +72,10 @@ body main {
   margin: auto;
 }
 
-/* ESTILOS HEADER */
-
-#contenedorNav a {
-  color: white;
-  margin-right: 40px;
-}
-#contenedorNav a:hover {
- color: #f0941f;
-}
-
-#contenedorNav {
-  background-color: #363432;
-}
-
-.fondoNegro {
-  background-color: #363432 !important;
-}
-#indexContenedor {
-  background-color: #90a19d;
-}
-.navbar-light .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-
-/* ESTILOS FOOTER */
-footer {
-  background-color: #363432;
-  padding: 10px;
-}
-
-footer li {
-  color: white;
-  padding: 3px;
-}
-
 /* INICIO ESTILOS*/
 
 .fondoTexto {
-  background-color: #196774;
+  background-color: $colorVerdeOscuro;
 }
 
 .informacionDos p {
@@ -57,7 +84,7 @@ footer li {
 }
 
 .bannerInfo p {
-  color: #ffff;
+  color: map-get($mapHeaderFooter, colorTextoBlanco);
   text-align: center;
   border: 2px solid black;
   padding: 20px;
@@ -77,7 +104,7 @@ section {
   padding: 10px;
 }
 .informacion {
-  color: #ffff;
+  color: map-get($mapHeaderFooter, colorTextoBlanco);
   padding: 10px;
   margin-bottom: 20px;
 }
@@ -99,39 +126,39 @@ section {
   flex-wrap: wrap;
 }
 
-.padre .hamburgesaUno {
-  color: #ffff;
+.contenedorMenu .hamburgesaUno {
+  color: map-get($mapHeaderFooter, colorTextoBlanco);
   width: calc(33.3% - 20px);
   border: 2px solid black;
   margin: 7px;
-  background-color: #90a19d;
+  background-color: $colorGris;
 }
 
-.padre .papasUno {
-  color: #ffff;
+.contenedorMenu .papasUno {
+  color: map-get($mapHeaderFooter, colorTextoBlanco);
   width: calc(33.3% - 20px);
   border: 2px solid black;
   margin: 7px;
-  background-color: #90a19d;
+  background-color: $colorGris;
 }
 
-.padre .hamburgesaUno h4 {
-  background-color: #363432;
-  color: #f0941f;
+.contenedorMenu .hamburgesaUno h4 {
+  background-color: $bgMenu;
+  color: map-get($mapHeaderFooter, colorNaranja);
   padding: 10px;
 }
-.padre .papasUno h4 {
-  background-color: #363432;
-  color: #f0941f;
+.contenedorMenu .papasUno h4 {
+  background-color: $bgMenu;
+  color: map-get($mapHeaderFooter, colorNaranja);
   padding: 10px;
 }
 
-.padre img {
+.contenedorMenu img {
   width: 237.96px;
   height: 237.96px;
 }
 
-.padre .hamburgesaDos img {
+.contenedorMenu .hamburgesaDos img {
   width: 237.96px;
   height: 237.96px;
 }
@@ -145,13 +172,13 @@ section {
 
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
-  color: #363432 !important;
-  background-color: #196774 !important;
+  color: $bgMenu !important;
+  background-color: $colorVerdeOscuro !important;
 }
 
 .sinPromocion a {
   text-decoration: none;
-  color: white;
+  color: map-get($mapHeaderFooter, colorTextoBlanco);
   font-weight: bold;
 }
 
@@ -165,12 +192,17 @@ section {
 /* ESTILOS CONTACTO  */
 .formularioContactos {
   justify-content: center;
-  background-color: #196774;
+  background-color: $colorVerdeOscuro;
   color: #f0941f;
   padding: 120px;
 }
 
 @media only screen and (max-width: 930px) {
+
+  p{
+    font-size:map-get($mapTextResponsive, textoMovil);
+  }
+
 
   #contenedorNav a:hover {
     background-color: #7ad4b657;
@@ -195,20 +227,20 @@ section {
     margin: auto;
   }
 
-  .padre .hamburgesaUno {
+  .contenedorMenu .hamburgesaUno {
     width: calc(100% - 20px);
   }
 
-  .padre .papasUno {
+  .contenedorMenu .papasUno {
     width: calc(100% - 20px);
   }
 
-  .padre img {
+  .contenedorMenu img {
     width: 100px;
     height: 100px;
   }
 
-  .padre .hamburgesaDos img {
+  .contenedorMenu .hamburgesaDos img {
     width: 100px;
     height: 100px;
   }
